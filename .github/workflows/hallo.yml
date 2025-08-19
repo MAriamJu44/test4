@@ -1,11 +1,12 @@
-name: hallo
+name: say hello
 on: push
 
-jobs:
+jobs: 
   say-hello:
     runs-on: ubuntu-latest
     steps:
       - name: checkout code
-        uses: actions/checkout@v4
-      - name: say-hallo
-        run: echo "Hello World"
+        uses: actions/checkout@4
+      - name: say-hello
+        run: echo "hello World"
+        
